@@ -1,0 +1,10 @@
+bin/
+obj/
+/packages/
+/.idea/.idea.Util/.idea/contentModel.xml
+/.idea/.idea.Util/.idea/indexLayout.xml
+/.idea/.idea.Util/.idea/modules.xml
+/.idea/.idea.Util/.idea/projectSettingsUpdater.xml
+/.idea/.idea.Util/riderModule.iml
+/.idea/.idea.Util/.idea/vcs.xml
+/.idea/.idea.Util/.idea/workspace.xml
