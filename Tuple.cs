@@ -6,11 +6,11 @@
         private readonly int _last;
 
         /**
-         * The constructor of {@link Tuple} class which takes two integer inputs and initializes first and last variables
-         * with given inputs.
+         * <summary>The constructor of {@link Tuple} class which takes two integer inputs and initializes first and last variables
+         * with given inputs.</summary>
          *
-         * @param first integer input.
-         * @param last  integer input.
+         * <param name="first">integer input.</param>
+         * <param name="last"> integer input.</param>
          */
         public Tuple(int first, int last)
         {
@@ -19,9 +19,9 @@
         }
 
         /**
-         * Getter for the first item at {@link Tuple}.
+         * <summary>Getter for the first item at {@link Tuple}.</summary>
          *
-         * @return the first item.
+         * <returns>the first item.</returns>
          */
         public int GetFirst()
         {
@@ -29,9 +29,9 @@
         }
 
         /**
-         * Getter for the last item at {@link Tuple}.
+         * <summary>Getter for the last item at {@link Tuple}.</summary>
          *
-         * @return the last item.
+         * <returns>the last item.</returns>
          */
         public int GetLast()
         {

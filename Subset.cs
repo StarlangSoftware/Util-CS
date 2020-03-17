@@ -10,14 +10,15 @@ namespace Util
         protected int elementCount;
 
         ///
-        /// The constructor of {@link Subset} class which takes 3 integer inputs; rangeStart, rangeEnd, and elementCount.
-        /// It initializes variables rangeEnd and elementCount with given inputs, creates 2 arrays; set and multiset with the
-        /// size of given elementCount and multisetCount, which is derived from elementCount, respectively. Then, it assigns
-        /// rangeStart+i to each ith element of set {@link java.lang.reflect.Array}.
+        /// <summary>The constructor of {@link Subset} class which takes 3 integer inputs; rangeStart, rangeEnd, and
+        /// elementCount. It initializes variables rangeEnd and elementCount with given inputs, creates 2 arrays; set
+        /// and multiset with the size of given elementCount and multisetCount, which is derived from elementCount,
+        /// respectively. Then, it assigns rangeStart+i to each ith element of set
+        /// {@link java.lang.reflect.Array}.</summary>
         /// 
-        /// @param rangeStart   integer input defining start range.
-        /// @param rangeEnd     integer input defining ending range.
-        /// @param elementCount integer input element count.
+        /// <param name="rangeStart">  integer input defining start range.</param>
+        /// <param name="rangeEnd">    integer input defining ending range.</param>
+        /// <param name="elementCount">integer input element count.</param>
         ///
         public Subset(int rangeStart, int rangeEnd, int elementCount)
         {
@@ -32,16 +33,16 @@ namespace Util
         }
 
         ///
-        /// An empty constructor of {@link Subset} class.
+        /// <summary>An empty constructor of {@link Subset} class.</summary>
         ///
         public Subset()
         {
         }
 
         ///
-        /// Getter for the set {@link java.lang.reflect.Array}.
+        /// <summary>Getter for the set {@link java.lang.reflect.Array}.</summary>
         /// 
-        /// @return the set {@link java.lang.reflect.Array}.
+        /// <returns>the set {@link java.lang.reflect.Array}.</returns>
         ///
         public int[] Get()
         {
@@ -49,9 +50,10 @@ namespace Util
         }
 
         
-        /// <summary>The getX method takes an integer M as an input. Creates a new array X size of elementCount+2 and assigns 0 to its
-        /// first element. Starting from the second index, it assigns set {@link java.lang.reflect.Array}'s elements to newly
-        /// created {@link java.lang.reflect.Array} X. Then, assigns M to the last element of X.</summary>
+        /// <summary>The getX method takes an integer M as an input. Creates a new array X size of elementCount+2 and
+        /// assigns 0 to its first element. Starting from the second index, it assigns set
+        /// {@link java.lang.reflect.Array}'s elements to newly created {@link java.lang.reflect.Array} X. Then, assigns
+        /// M to the last element of X.</summary>
         /// 
         /// <param name="m">integer input.</param> 
         /// <returns>Array size of elementCount+2.</returns>
@@ -69,9 +71,9 @@ namespace Util
         }
 
         ///
-        /// Getter for the multiset {@link java.lang.reflect.Array}.
+        /// <summary>Getter for the multiset {@link java.lang.reflect.Array}.</summary>
         /// 
-        /// @return the multiset {@link java.lang.reflect.Array}.
+        /// <returns>the multiset {@link java.lang.reflect.Array}.</returns>
         ///
         public int[] Getmultiset()
         {
@@ -79,13 +81,15 @@ namespace Util
         }
 
         ///
-        /// The multiset method takes an integer M as an input. Assigns ith element of set {@link java.lang.reflect.Array} to even numbered
-        /// indices of multiset {@link java.lang.reflect.Array} and M - ith element of set {@link java.lang.reflect.Array} to odd numbered
-        /// indices of multiset {@link java.lang.reflect.Array}, and i is between 0 and elementCount. Then, assigns M to jth index of multiset
-        /// {@link java.lang.reflect.Array}. At the end, fill up the rest of the multiset {@link java.lang.reflect.Array} via different
-        /// indices of set {@link java.lang.reflect.Array} and sort the multiset {@link java.lang.reflect.Array}.
+        /// <summary>The multiset method takes an integer M as an input. Assigns ith element of set
+        /// {@link java.lang.reflect.Array} to even numbered indices of multiset {@link java.lang.reflect.Array} and
+        /// M - ith element of set {@link java.lang.reflect.Array} to odd numbered indices of multiset
+        /// {@link java.lang.reflect.Array}, and i is between 0 and elementCount. Then, assigns M to jth index of
+        /// multiset {@link java.lang.reflect.Array}. At the end, fill up the rest of the multiset
+        /// {@link java.lang.reflect.Array} via different indices of set {@link java.lang.reflect.Array} and sort the
+        /// multiset {@link java.lang.reflect.Array}.</summary>
         /// 
-        /// @param M integer input.
+        /// <param name="m">integer input.</param>
         ///
         public void Getmultiset(int m)
         {
@@ -110,9 +114,9 @@ namespace Util
         }
 
         ///
-        /// The next method generates the next subset.
+        /// <summary>The next method generates the next subset.</summary>
         /// 
-        /// @return true if next subset generation is possible, false otherwise.
+        /// <returns>true if next subset generation is possible, false otherwise.</returns>
         ///
         public bool Next()
         {
@@ -132,7 +136,7 @@ namespace Util
         }
 
         ///
-        /// The print method prints elements of set {@link java.lang.reflect.Array}.
+        /// <summary>The print method prints elements of set {@link java.lang.reflect.Array}.</summary>
         ///
         public void Print()
         {

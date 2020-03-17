@@ -1,6 +1,3 @@
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
-
 namespace Util
 {
     public class Permutation
@@ -9,10 +6,10 @@ namespace Util
         private int _n;
 
         /**
-         * A constructor of {@link Permutation} class which creates a new {@link java.lang.reflect.Array} and assigns integer
-         * numbers starting from 0 to given input n.
+         * <summary>A constructor of {@link Permutation} class which creates a new {@link java.lang.reflect.Array} and assigns integer
+         * numbers starting from 0 to given input n.</summary>
          *
-         * @param n integer input.
+         * <param name="n">integer input.</param>
          */
         public Permutation(int n)
         {
@@ -25,9 +22,9 @@ namespace Util
         }
 
         /**
-         * The get method returns the {@link java.lang.reflect.Array} a.
+         * <summary>The get method returns the {@link java.lang.reflect.Array} a.</summary>
          *
-         * @return Array a.
+         * <returns>Array a.</returns>
          */
         public int[] Get()
         {
@@ -35,9 +32,9 @@ namespace Util
         }
 
         /**
-         * The next method generates next permutation for the {@link java.lang.reflect.Array} a.
+         * <summary>The next method generates next permutation for the {@link java.lang.reflect.Array} a.</summary>
          *
-         * @return true if next permutation is possible, false otherwise.
+         * <returns>true if next permutation is possible, false otherwise.</returns>
          */
         public bool Next()
         {

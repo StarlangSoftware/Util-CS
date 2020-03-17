@@ -17,8 +17,8 @@ namespace Util
         ///
         ///<summary>The add method adds a new {@link Tuple} with given inputs to the list.</summary>
         ///
-        ///@param start first element of {@link Tuple}.
-        ///@param end   second element of {@link Tuple}.
+        ///<param name="start">first element of {@link Tuple}.</param>
+        ///<param name="end">  second element of {@link Tuple}.</param>
         ///
         public void Add(int start, int end)
         {
@@ -28,8 +28,8 @@ namespace Util
         ///
         ///<summary>The getFirst method returns the first element at the list {@link ArrayList}'s given index.</summary>
         ///
-        ///@param index to use at getting tuple from {@link ArrayList}.
-        ///@return the first element at the list {@link ArrayList}'s given index.
+        ///<param name="index">to use at getting tuple from {@link ArrayList}.</param>
+        ///<returns>the first element at the list {@link ArrayList}'s given index.</returns>
         ///
         public int GetFirst(int index)
         {
@@ -39,8 +39,8 @@ namespace Util
         ///
         ///<summary>The getLast method returns the last element at the list {@link ArrayList}'s given index.</summary>
         ///
-        ///@param index to use at getting tuple from {@link ArrayList}.
-        ///@return the last element at the list {@link ArrayList}'s given index.
+        ///<param name="index">to use at getting tuple from {@link ArrayList}.</param>
+        ///<returns>the last element at the list {@link ArrayList}'s given index.</returns>
         ///
         public int GetLast(int index)
         {
@@ -50,7 +50,7 @@ namespace Util
         ///
         ///<summary>The size method returns the size of the list {@link ArrayList}.</summary>
         ///
-        ///@return size of the list {@link ArrayList}.
+        ///<returns>size of the list {@link ArrayList}.</returns>
         ///
         public int Size()
         {
