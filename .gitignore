@@ -8,3 +8,5 @@ obj/
 /.idea/.idea.Util/riderModule.iml
 /.idea/.idea.Util/.idea/vcs.xml
 /.idea/.idea.Util/.idea/workspace.xml
+Util.csproj
+Util.sln
