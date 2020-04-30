@@ -2,11 +2,11 @@ namespace Util
 {
     public class Permutation
     {
-        private int[] _a;
-        private int _n;
+        private readonly int[] _a;
+        private readonly int _n;
 
         /**
-         * <summary>A constructor of {@link Permutation} class which creates a new {@link java.lang.reflect.Array} and assigns integer
+         * <summary>A constructor of <see cref="Permutation"/> class which creates a new array and assigns integer
          * numbers starting from 0 to given input n.</summary>
          *
          * <param name="n">integer input.</param>
@@ -15,14 +15,14 @@ namespace Util
         {
             _n = n;
             _a = new int[n];
-            for (int i = 0; i < n; i++)
+            for (var i = 0; i < n; i++)
             {
                 _a[i] = i;
             }
         }
 
         /**
-         * <summary>The get method returns the {@link java.lang.reflect.Array} a.</summary>
+         * <summary>The get method returns the array a.</summary>
          *
          * <returns>Array a.</returns>
          */
@@ -32,7 +32,7 @@ namespace Util
         }
 
         /**
-         * <summary>The next method generates next permutation for the {@link java.lang.reflect.Array} a.</summary>
+         * <summary>The next method generates next permutation for the array a.</summary>
          *
          * <returns>true if next permutation is possible, false otherwise.</returns>
          */

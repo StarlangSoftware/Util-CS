@@ -6,23 +6,21 @@ namespace Util
         private readonly int[] _indexList;
         
         /**
-         * <summary>A constructor of {@link SubsetFromList} class takes an integer list and an integer elementCount as inputs. It initializes
+         * <summary>A constructor of <see cref="SubsetFromList"/> class takes an integer list and an integer elementCount as inputs. It initializes
          * elementList and elementCount variables with given inputs, then creates 3 arrays; set,indexList, and multiset with the
          * size of given elementCount and multisetCount, which is derived from elementCount, respectively. Then, it assigns
-         * i to each ith element of indexList {@link java.lang.reflect.Array} and use this index to point at elementList and
-         * assigns to set {@link java.lang.reflect.Array}.</summary>
+         * i to each ith element of indexList array and use this index to point at elementList and
+         * assigns to set array.</summary>
          *
-         * <param name="list">        {@link java.lang.reflect.Array} type input.</param>
+         * <param name="list">        array type input.</param>
          * <param name="elementCount">integer input element count.</param>
          */
         public SubsetFromList(int[] list, int elementCount) {
             int i;
             _elementList = list;
             this.elementCount = elementCount;
-            var multisetCount = (elementCount + 2) * (elementCount + 1) / 2;
             set = new int[elementCount];
             _indexList = new int[elementCount];
-            multiset = new int[multisetCount];
             for (i = 0; i < elementCount; i++) {
                 _indexList[i] = i;
                 set[i] = _elementList[_indexList[i]];
@@ -34,7 +32,7 @@ namespace Util
          *
          * <returns>true if next subset generation from list is possible, false otherwise.</returns>
          */
-        public bool Next() {
+        public new bool Next() {
             int i, j;
             for (i = elementCount - 1; i > -1; i--) {
                 _indexList[i]++;

@@ -6,7 +6,7 @@
         private readonly int _last;
 
         /**
-         * <summary>The constructor of {@link Tuple} class which takes two integer inputs and initializes first and last variables
+         * <summary>The constructor of <see cref="Tuple"/> class which takes two integer inputs and initializes first and last variables
          * with given inputs.</summary>
          *
          * <param name="first">integer input.</param>
@@ -19,7 +19,7 @@
         }
 
         /**
-         * <summary>Getter for the first item at {@link Tuple}.</summary>
+         * <summary>Getter for the first item at <see cref="Tuple"/>.</summary>
          *
          * <returns>the first item.</returns>
          */
@@ -29,7 +29,7 @@
         }
 
         /**
-         * <summary>Getter for the last item at {@link Tuple}.</summary>
+         * <summary>Getter for the last item at <see cref="Tuple"/>.</summary>
          *
          * <returns>the last item.</returns>
          */
