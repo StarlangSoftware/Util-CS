@@ -4,9 +4,9 @@ namespace Util
 {
     public class Subset
     {
-        protected int[] set;
+        protected int[] Set;
         private readonly int _rangeEnd;
-        protected int elementCount;
+        protected int ElementCount;
 
         ///
         /// <summary>The constructor of <see cref="Subset"/> class which takes 3 integer inputs; rangeStart, rangeEnd, and
@@ -23,11 +23,10 @@ namespace Util
         {
             int i;
             _rangeEnd = rangeEnd;
-            this.elementCount = elementCount;
-            var multisetCount = (elementCount + 2) * (elementCount + 1) / 2;
-            set = new int[elementCount];
+            this.ElementCount = elementCount;
+            Set = new int[elementCount];
             for (i = 0; i < elementCount; i++)
-                set[i] = rangeStart + i;
+                Set[i] = rangeStart + i;
         }
 
         ///
@@ -44,7 +43,7 @@ namespace Util
         ///
         public int[] Get()
         {
-            return set;
+            return Set;
         }
         
         ///
@@ -55,17 +54,17 @@ namespace Util
         public bool Next()
         {
             int i, j;
-            for (i = elementCount - 1; i > -1; i--)
+            for (i = ElementCount - 1; i > -1; i--)
             {
-                set[i]++;
-                if (set[i] <= _rangeEnd - elementCount + i + 1)
+                Set[i]++;
+                if (Set[i] <= _rangeEnd - ElementCount + i + 1)
                     break;
             }
 
             if (i == -1)
                 return false;
-            for (j = i + 1; j < elementCount; j++)
-                set[j] = set[j - 1] + 1;
+            for (j = i + 1; j < ElementCount; j++)
+                Set[j] = Set[j - 1] + 1;
             return true;
         }
 
@@ -75,9 +74,9 @@ namespace Util
         public void Print()
         {
             int i;
-            for (i = 0; i < elementCount; i++)
+            for (i = 0; i < ElementCount; i++)
             {
-                Console.WriteLine(set[i] + " ");
+                Console.WriteLine(Set[i] + " ");
             }
 
             Console.WriteLine();

@@ -18,12 +18,12 @@ namespace Util
         public SubsetFromList(int[] list, int elementCount) {
             int i;
             _elementList = list;
-            this.elementCount = elementCount;
-            set = new int[elementCount];
+            this.ElementCount = elementCount;
+            Set = new int[elementCount];
             _indexList = new int[elementCount];
             for (i = 0; i < elementCount; i++) {
                 _indexList[i] = i;
-                set[i] = _elementList[_indexList[i]];
+                Set[i] = _elementList[_indexList[i]];
             }
         }
 
@@ -34,17 +34,17 @@ namespace Util
          */
         public new bool Next() {
             int i, j;
-            for (i = elementCount - 1; i > -1; i--) {
+            for (i = ElementCount - 1; i > -1; i--) {
                 _indexList[i]++;
-                if (_indexList[i] < _elementList.Length - elementCount + i + 1)
+                if (_indexList[i] < _elementList.Length - ElementCount + i + 1)
                     break;
             }
             if (i == -1)
                 return false;
-            set[i] = _elementList[_indexList[i]];
-            for (j = i + 1; j < elementCount; j++) {
+            Set[i] = _elementList[_indexList[i]];
+            for (j = i + 1; j < ElementCount; j++) {
                 _indexList[j] = _indexList[j - 1] + 1;
-                set[j] = _elementList[_indexList[j]];
+                Set[j] = _elementList[_indexList[j]];
             }
             return true;
         }
