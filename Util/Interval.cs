@@ -7,7 +7,7 @@ namespace Util
         private readonly List<Tuple> _list;
 
         ///
-        ///<summary>A constructor of <see cref="Interval"/> class which creates a new <see cref="List"/> list.</summary>
+        ///<summary>A constructor of <see cref="Interval"/> class which creates a new list.</summary>
         ///
         public Interval()
         {
@@ -26,10 +26,10 @@ namespace Util
         }
 
         ///
-        ///<summary>The getFirst method returns the first element at the list <see cref="List"/>'s given index.</summary>
+        ///<summary>The getFirst method returns the first element at the list's given index.</summary>
         ///
-        ///<param name="index">to use at getting tuple from <see cref="List"/>.</param>
-        ///<returns>the first element at the list <see cref="List"/>'s given index.</returns>
+        ///<param name="index">to use at getting tuple from list.</param>
+        ///<returns>the first element at the list's given index.</returns>
         ///
         public int GetFirst(int index)
         {
@@ -37,10 +37,10 @@ namespace Util
         }
 
         ///
-        ///<summary>The getLast method returns the last element at the list <see cref="List"/>'s given index.</summary>
+        ///<summary>The getLast method returns the last element at the list's given index.</summary>
         ///
-        ///<param name="index">to use at getting tuple from <see cref="List"/>.</param>
-        ///<returns>the last element at the list <see cref="List"/>'s given index.</returns>
+        ///<param name="index">to use at getting tuple from list.</param>
+        ///<returns>the last element at the list's given index.</returns>
         ///
         public int GetLast(int index)
         {
@@ -48,9 +48,9 @@ namespace Util
         }
 
         ///
-        ///<summary>The size method returns the size of the list <see cref="List"/>.</summary>
+        ///<summary>The size method returns the size of the list.</summary>
         ///
-        ///<returns>size of the list <see cref="List"/>.</returns>
+        ///<returns>size of the list.</returns>
         ///
         public int Size()
         {
