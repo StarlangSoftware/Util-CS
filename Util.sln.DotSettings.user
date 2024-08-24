@@ -3,5 +3,7 @@
 	
 	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=827c2efa_002D53c1_002D40a6_002D8e5f_002Def89648bbd5b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;Test&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;Project Location="/Users/olcay/Dropbox (Isik University)/nlptoolkit-repositories-c#/Util/Test" Presentation="&amp;lt;Test&amp;gt;" /&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::B1D5E08A-D351-4C0D-B2CC-928A5B97DBB9::.NETCoreApp,Version=v3.1::Test.PermutationTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
