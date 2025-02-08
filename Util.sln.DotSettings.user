@@ -7,5 +7,7 @@
     &lt;TestId&gt;NUnit3x::B1D5E08A-D351-4C0D-B2CC-928A5B97DBB9::net8.0::Test.PermutationTest&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::B1D5E08A-D351-4C0D-B2CC-928A5B97DBB9::net8.0::Test.RandomArrayTest&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::B1D5E08A-D351-4C0D-B2CC-928A5B97DBB9::net8.0::Test.SubsetFromListTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::B1D5E08A-D351-4C0D-B2CC-928A5B97DBB9::.NETCoreApp,Version=v3.1::Test.PermutationTest&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::B1D5E08A-D351-4C0D-B2CC-928A5B97DBB9::net8.0::Test.SubsetTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
